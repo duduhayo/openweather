@@ -1,7 +1,11 @@
 <p>Best weather on earth for male (21c,50 humidity) is:</p>
 <p *ngIf="!bestWeathesrMale">loading......</p>
-  <ul>
-    <li *ngFor='let bestWeatherMale of bestWeathesrMale'>
-          location name : {{bestWeatherMale.name}} , temp : {{bestWeatherMale.main.temp}} , humidity : {{bestWeatherMale.main.humidity}}
-    </li>
-  </ul>
+<ul>
+  <li *ngFor='let bestWeatherMale of bestWeathesrMale'>
+    location name : {{bestWeatherMale.name}} , temp : {{bestWeatherMale.main.temp}} , humidity : {{bestWeatherMale.main.humidity}}
+  </li>
+  <p>Best weather on earth for female (22c,50 humidity) is:</p>
+  <li *ngFor='let bestWeatherFeMale of bestWeathesrFeMale'>
+    location name : {{bestWeatherFeMale.name}} , temp : {{bestWeatherFeMale.main.temp}} , humidity : {{bestWeatherFeMale.main.humidity}}
+  </li>
+</ul>

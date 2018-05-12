@@ -14,7 +14,7 @@ export class OpenWeatherCmpComponent implements OnInit {
   bestWeathesrMale:any
 
   constructor(owsSerivce:OpenWeatherService) {
-     owsSerivce.getBboxData(-180,-52,180,63,10).subscribe( (data) =>{this.getBestWeather(data)});
+     owsSerivce.getBboxData(-180,-52,180,63,100).subscribe( (data) =>{this.getBestWeather(data)});
    }
 
    public  getBestWeather(owResponseData)
